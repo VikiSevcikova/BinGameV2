@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_game_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242" >
+
+    <ImageView
+        android:id="@+id/odpoved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/wrong" />
+
+    <GridLayout
+        android:id="@+id/bity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/odpoved"
+        android:layout_centerHorizontal="true"
+        android:columnCount="14"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/bit16"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="left"
+            android:src="@drawable/b0" />
+
+        <ImageView
+            android:id="@+id/bit8"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_column="6"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:src="@drawable/b0" />
+
+        <ImageView
+            android:id="@+id/bit4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_column="7"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:src="@drawable/b0" />
+
+        <ImageView
+            android:id="@+id/bit2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_column="8"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:cropToPadding="true"
+            android:src="@drawable/b0" />
+
+        <ImageView
+            android:id="@+id/bit1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_column="9"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:src="@drawable/b0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_column="7"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="1"
+            android:text="4"
+            android:textColor="#FF8F00"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/cas"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="1"
+            android:text="16"
+            android:textColor="#FF8F00"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_column="6"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="1"
+            android:text="8"
+            android:textColor="#FF8F00"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_column="9"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="1"
+            android:text="1"
+            android:textColor="#FF8F00"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_column="8"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="1"
+            android:text="2"
+            android:textColor="#FF8F00"
+            android:textSize="30dp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cislo"
+        android:layout_below="@+id/bity"
+        android:text="="
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/cislo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="#FF8F00"
+        android:text="-"
+        android:textColor="#ffffff"
+        android:textSize="80dp" />
+
+    <Button
+        android:id="@+id/kontrola"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:onClick="skontrolovat"
+        android:text="Kontrola"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/odpoved"
+        android:layout_marginRight="115dp"
+        android:src="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/zvukIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/info"
+        android:layout_marginLeft="44dp"
+        android:layout_toRightOf="@+id/bity"
+        android:src="@drawable/sound_on" />
+
+</RelativeLayout>
