@@ -1,5 +1,6 @@
 # BinGameV2
 Bachelor's Thesis
+
 The goal of the Bachelor's Thesis was to design and program an application that
 teachers could use for computer science lessons. We chosed the topic binary number system.
 
